@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
 
-export default function Signup() {
+export default function Signup({ setAlert, setUser }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
+  const navigate = useNavigate();
 
   function createAccount(e) {
     const requestOptions = {
@@ -20,8 +22,16 @@ export default function Signup() {
       }),
     };
     fetch("/createUser", requestOptions)
-      .then((_res) => {
-        console.log(_res.json());
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setAlert({
+          variant: "success",
+          message: "Your account has been created",
+        });
+        setUser(data.username);
+        navigate("/");
       })
       .catch((err) => console.error(err));
   }
@@ -39,7 +49,7 @@ export default function Signup() {
   }
 
   return (
-    <Form className="">
+    <Form className="center-form">
       <Form.Group className="mb-4">
         <Form.Label>Username</Form.Label>
         <Form.Control
