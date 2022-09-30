@@ -7,23 +7,28 @@ import {
   fetchListStart,
   fetchListSuccess,
 } from "../modules/board"
+import { endLoading, startLoading } from "../modules/loading"
 
 const BoardListContainer = () => {
   const dispatch = useDispatch()
 
-  const { boards, isLoading } = useSelector((state) => ({
-    boards: state.boards,
-    isLoading: state.loading.FETCH_LIST,
+  const { boards, isLoading } = useSelector(({ board, loading }) => ({
+    boards: board.boards,
+    isLoading: loading.FETCH_LIST,
   }))
 
   const listBoard = useCallback(async () => {
-    dispatch(fetchListStart())
+    dispatch(startLoading("FETCH_LIST"))
     try {
       const response = await fetchBoardListApi()
 
       dispatch(fetchListSuccess(response.data))
+
+      dispatch(endLoading("FETCH_LIST"))
     } catch (error) {
       dispatch(fetchListFailure(error))
+
+      dispatch(endLoading("FETCH_LIST"))
 
       throw error
     }

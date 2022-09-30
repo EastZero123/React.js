@@ -8,8 +8,9 @@ import board from "./modules/board"
 import { composeWithDevTools } from "redux-devtools-extension"
 import { createStore } from "redux"
 import { Provider } from "react-redux"
+import rootReducer from "./modules"
 
-const store = createStore(board, composeWithDevTools())
+const store = createStore(rootReducer, composeWithDevTools())
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
