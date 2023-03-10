@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+@import url('animate.css');
+@import url('font.css');
+
+@import 'base/reset';/* 소라M */
+@import 'base/keyframes';/* 소라M */
+
+@import 'utils/function';/* 소라M */
+@import 'utils/variables';/* 소라M */
+
+@import 'components/svg';/* 소라M */
+
+@import 'layout/common';/* 소라M */
+@import 'layout/popup';/* 소라M */
+@import 'layout/header';/* 영진M */
+@import 'layout/footer';/* 소라M */
+@import 'layout/main';/* 소라M */
+
+@import 'sub/info';/* 영진M */
+@import 'sub/work';/* 현준M */
+@import 'sub/board';/* 지영S */
+@import 'sub/etc';/* 소라M */
+

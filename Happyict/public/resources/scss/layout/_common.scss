@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+@import url("font.css");
+
+/* LAYOUT */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* COMMON */
+legend,
+caption {
+    display: none;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.txt_hide {
+    overflow: hidden;
+    position: absolute;
+    top: -5000px;
+    left: -5000px;
+    width: 0.1%;
+    height: 0.1%;
+    line-height: 0.1%;
+    font-size: 0.1%;
+}
+
+.clear {
+    &:before,
+    &:after {content: " ";display: table;clear: both}
+}
+
+.blind {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0.1em;
+    line-height: 0.01em;
+    text-indent: -9999px;
+}
+
+/* SKIP NAVIGATION */
+#skip-navi {
+    height: 0;
+    a {
+        position: absolute;
+        top: -9999px;
+        z-index: 10000;
+        width: 100%;
+        height: 30px;
+        background-color: #000;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        line-height: 30px;
+        opacity: 0.6;
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        filter: alpha(opacity=60);
+        &:hover,
+        &:focus,
+        &:active {
+            top: 0;
+            color: #fff;
+        }
+    }
+}
+
+/* FLOATING TEXT */
+.more_btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(0);
+    z-index: 9;
+    width: 100px;
+    margin-left: -50px;
+    a {
+        font-size: 12px;
+        color: #fff;
+        position: relative;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-align: center;
+        &:after {
+            content: "";
+            height: 20px;
+            width: 1px;
+            background: #fff;
+            position: absolute;
+            top: 20px;
+            left: 34px;
+        }
+    }
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.sub_contents {
+    position: relative;
+}
+
+.br_1024 {
+    display: block;
+}
+
+/* VISUAL */
+.sub_visual {
+    height: 990px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    .text {
+        position: absolute;
+        top: 44%;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        max-width: 640px;
+        z-index: 3;
+        p {
+            color: #fff;
+            text-align: center;
+            &:nth-child(1) {
+                font-size: 55px;
+                line-height: 100%;
+                margin-bottom: 35px;
+                animation: UpDown 1s;
+            }
+
+            &:nth-child(2) {
+                font-size: 16px;
+                line-height: 160%;
+                animation: UpDown 1.5s;
+            }
+        }
+    }
+    &.visual_01 {
+        background-image: url(../../resources/img/contents/visual/visual_01.jpg);
+    }
+    &.visual_02 {
+        background-image: url(../../resources/img/contents/visual/visual_02.jpg);
+    }
+    &.visual_03 {
+        background-image: url(../../resources/img/contents/visual/visual_03.jpg);
+    }
+    &.visual_04 {
+        background-image: url(../../resources/img/contents/visual/visual_04.jpg);
+    }
+    &.visual_05 {
+        background-image: url(../../resources/img/contents/visual/visual_05.jpg);
+    }
+    &.visual_06 {
+        background-image: url(../../resources/img/contents/visual/visual_06.jpg);
+    }
+    &.visual_07 {
+        background-image: url(../../resources/img/contents/visual/visual_07.jpg);
+    }
+    &.visual_08 {
+        background-image: url(../../resources/img/contents/visual/visual_08.jpg);
+    }
+    &.visual_09 {
+        background-image: url(../../resources/img/contents/visual/visual_09.jpg);
+    }
+    &.visual_10 {
+        background-image: url(../../resources/img/contents/visual/visual_10.jpg);
+    }
+    &.visual_11 {
+        background-image: url(../../resources/img/contents/visual/visual_11.jpg);
+    }
+    &.visual_12 {
+        background-image: url(../../resources/img/contents/visual/visual_12.jpg);
+    }
+    &.visual_13 {
+        background-image: url(../../resources/img/contents/visual/visual_13.jpg);
+    }
+    &.visual_14 {
+        background-image: url(../../resources/img/contents/visual/visual_14.jpg);
+    }
+}
+
+/* color_chart */
+.color-e51837 {background-color: #e51837;}
+.color-ef791f {background-color: #ef791f;}
+.color-e4ac11 {background-color: #e4ac11;}
+.color-f47725 {background-color: #f47725;}
+.color-575757 {background-color: #575757;}
+.color-de002b {background-color: #de002b;}
+.color-e75c1d {background-color: #e75c1d;}
+.color-5d5d5d {background-color: #5d5d5d;}
+.color-ea002c {background-color: #ea002c;}
+.color-000000 {background-color: #000000;}
+.color-666666 {background-color: #666666;}
+.color-1b9411 {background-color: #1b9411;}
+.color-066fc2 {background-color: #066fc2;}
+.color-555555 {background-color: #555555;}
+.color-8fc031 {background-color: #8fc031;}
+.color-a5a5a5 {background-color: #a5a5a5;}
+.color-fd6767 {background-color: #fd6767;}
+.color-2f67b1 {background-color: #2f67b1;}
+.color-ee3638 {background-color: #ee3638;}
+.color-888888 {background-color: #888888;}
+.color-ea6d1b {background-color: #ea6d1b;}
+.color-dd2777 {background-color: #dd2777;}
+.color-333333 {background-color: #333333;}
+.color-727272 {background-color: #727272;}
+.color-ffffff {background-color: #ffffff;}
+.color-d82132 {background-color: #d82132;}
+.color-f58026 {background-color: #f58026;}
+.color-6e6e6e {background-color: #6e6e6e;}
+.color-261314 {background-color: #261314;}
+.color-e70128 {background-color: #e70128;}
+.color-ec861a {background-color: #ec861a;}
+.color-7a838a {background-color: #7a838a;}
+.color-105188 {background-color: #105188;}
+.color-82efff {background-color: #82efff;}
+.color-e8252d {background-color: #e8252d;}
+.color-fe8325 {background-color: #fe8325;}
+.color-51555d {background-color: #51555d;}
+.color-00aadd {background-color: #00aadd;}
+.color-3875c5 {background-color: #3875c5;}
+.color-2e3d50 {background-color: #2e3d50;}
+.color-fcfcfc {background-color: #fcfcfc;}
+.color-00aadd {background-color: #00aadd;}
+.color-3875c5 {background-color: #3875c5;}
+.color-2e3d50 {background-color: #2e3d50;}
+.color-fcfcfc {background-color: #fcfcfc;}
+.color-f51535 {background-color: #f51535;}
+.color-fd7e1f {background-color: #fd7e1f;}
+.color-b6000d {background-color: #b6000d;}
+.color-111111 {background-color: #111111;}
+.color-dd052b {background-color: #dd052b;}
+.color-ff4000 {background-color: #ff4000;}
+.color-5c5c5c {background-color: #5c5c5c;}
+.color-e51b39 {background-color: #e51b39;}
+.color-ff4f00 {background-color: #ff4f00;}
+.color-252525 {background-color: #252525;}
+.color-f76e34 {background-color: #f76e34;}
+.color-f08718 {background-color: #f08718;}
+.color-55bacc {background-color: #55bacc;}
+.color-d2232a {background-color: #d2232a;}
+.color-999999 {background-color: #999999;}
+.color-f72511 {background-color: #f72511;}
+.color-ff6206 {background-color: #ff6206;}
+.color-484848 {background-color: #484848;}
+.color-7bbd27 {background-color: #7bbd27;}
+.color-ed7219 {background-color: #ed7219;}
+.color-424242 {background-color: #424242;}
+.color-1a88c5 {background-color: #1a88c5;}
+.color-78c5df {background-color: #78c5df;}
+.color-c87f75 {background-color: #c87f75;}
+.color-cc3946 {background-color: #cc3946;}
+.color-3b3c3c {background-color: #3b3c3c;}
+.color-f5f5f5 {background-color: #f5f5f5;}
+.color-d5001f {background-color: #d5001f;}
+.color-ef6f14 {background-color: #ef6f14;}
+.color-403d3e {background-color: #403d3e;}
+.color-ffe576 {background-color: #ffe576;}
+.color-fc6046 {background-color: #fc6046;}
+.color-6e4d3b {background-color: #6e4d3b;}
+.color-71af42 {background-color: #71af42;}
+.color-f7881f {background-color: #f7881f;}
+.color-2db7bf {background-color: #2db7bf;}
+.color-cecece {background-color: #cecece;}
+.color-e72628 {background-color: #e72628;}
+.color-ff8201 {background-color: #ff8201;}
+.color-73b7e5 {background-color: #73b7e5;}
+.color-f95578 {background-color: #f95578;}
+.color-45b4bd {background-color: #45b4bd;}
+.color-fd7c5b {background-color: #fd7c5b;}
+.color-e51937 {background-color: #e51937;}
+.color-35373a {background-color: #35373a;}
+.color-cfcfd0 {background-color: #cfcfd0;}
+.color-5e7c1c {background-color: #5e7c1c;}
+.color-d57f2a {background-color: #d57f2a;}
+.color-11191b {background-color: #11191b;}
+.color-434343 {background-color: #434343;}
+.color-367a87 {background-color: #367A87;}
+.color-524847 {background-color: #524847;}
+.color-d04127 {background-color: #D04127;}
+.color-e1002a {background-color: #E1002A;}
+.color-1d3960 {background-color: #1A3960;}
+.color-42454a {background-color: #42454A;}
+.color-ee7609 {background-color: #EE7609;}
+.color-0c080a {background-color: #0C080A;}
+.color-666c7a {background-color: #666C7A;}
+
+
+/* ========= MOBILE ========= */
+
+@include tablet {
+    
+    /* VISUAL */
+    .sub_visual {
+        background-image: url(../../resources/img/contents/sub/m_company_info_bg.jpg);
+        height: 860px;
+    }
+
+}/* 1024 end */
+
+@include mobile {
+
+    /* FLOATING TEXT */
+    .more_btn {
+        a {
+            letter-spacing: 0px;
+            &:after {
+                left: 21px;
+            }
+        }
+    }    
+
+    /* VISUAL */
+    .sub_visual {
+        height: 550px;
+
+        .text {
+            top: 41%;
+            width: 80%;
+            padding: 0;
+
+            p {
+                &:nth-child(1) {
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                    word-break: keep-all;
+                }
+
+                &:nth-child(2) {
+                    font-size: 14px;
+                    letter-spacing: -0.6px;
+                }
+            }
+        }
+    }
+
+}/* 640 end */

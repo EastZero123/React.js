@@ -1,0 +1,932 @@
+@charset "utf-8";
+
+.btn_wrap {
+    &.board_view {
+        padding: 0 20px;
+        margin: 0 auto 105px auto;
+        text-align: center;
+
+        button {
+            width: 200px;
+            height: 54px;
+            background: #333;
+            border: 1px solid #333;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+
+            &.white:hover,
+            &.black:hover {
+                background: #db4232;
+                color: #fff;
+                border: 1px solid #db4232;
+                transition: .2s ease-in-out;
+            }
+        }
+    }
+}
+
+/* 개요 */
+.info_text {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 740px;
+
+    .title {
+        font-size: 30px;
+        color: #222;
+        padding: 120px 20px 60px;
+        word-break: keep-all;
+    }
+
+    .img {
+        padding: 0 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text {
+        font-size: 16px;
+        color: #444;
+        padding: 50px 20px 110px;
+        line-height: 26px;
+        letter-spacing: -0.5px;
+        word-break: keep-all;
+    }
+}
+
+/* IT 서비스 */
+.service_wrap {
+    padding: 130px 0 40px 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    .inner {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    .fl,
+    .fr {
+        width: 620px;
+    }
+
+    .fl {
+        float: left;
+        text-align: right;
+    }
+
+    .fr {
+        float: right;
+        text-align: left;
+    }
+
+    .sec {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    ul {
+        li {
+            color: #666;
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            line-height: 27px;
+            margin-bottom: 18px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 34px;
+        font-weight: normal;
+        line-height: 34px;
+        padding: 75px 0 35px 0;
+    }
+
+    button {
+        display: inline-block;
+        width: 162px;
+        color: #444;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        border: 1px solid #666;
+        padding: 18px 0 16px 0;
+        margin-top: 30px;
+
+        &:hover {
+            color: #fff;
+            border: 1px solid #444;
+            background-color: #444;
+            transition: .2s ease-in-out;
+        }
+    }
+}
+
+/* ICT 솔루션 */
+.solution_wrap {
+    text-align: center;
+    padding-top: 130px;
+
+    .sec {
+        display: inline-block;
+        width: 100%;
+
+        &:nth-child(2n-1) {
+            position: relative;
+            height: 370px;
+        }
+
+        &:nth-child(2n) {
+            background: #fcfcfc;
+
+            h2 {
+                font-size: 28px;
+                padding: 180px 0 60px 0;
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 130px;
+        }
+    }
+
+    .inner {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    .fl {
+        float: left;
+        text-align: right;
+    }
+
+    .fr {
+        float: right;
+        text-align: left;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .m {
+        display: none;
+    }
+
+    h2 {
+        color: #222;
+        font-size: 36px;
+        font-weight: normal;
+        padding: 67px 0 35px 0;
+    }
+
+    p {
+        color: #666;
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 18px;
+    }
+
+    .btn_wrap {
+        padding: 55px 0 90px 0;
+    }
+
+    button {
+        display: inline-block;
+        width: 162px;
+        color: #444;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        border: 1px solid #666;
+        padding: 18px 0 16px 0;
+        margin-top: 15px;
+
+        &:hover {
+            color: #fff;
+            border: 1px solid #444;
+            background-color: #444;
+            transition: .2s ease-in-out;
+        }
+    }
+}
+
+/* 취약계층 고용 */
+.employ_wrap {
+    text-align: center;
+    padding: 110px 0 105px 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+
+    .sec {
+        display: block;
+        width: 100%;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .chart_warp {
+        width: 100%;
+        background-color: #fcfcfc;
+        padding: 70px 40px 60px;
+        margin-top: 45px;
+    }
+
+    .txt1 {
+        font-size: 16px;
+        max-width: 750px;
+        margin: 0 auto;
+        line-height: 26px;
+    }
+
+    .inner {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    .chart_ui {
+        max-width: 1320px;
+        margin: 0 auto;
+
+        .tex2 {
+            max-width: 940px;
+            margin: 0 auto;
+            text-align: right;
+            margin-bottom: 20px;
+            line-height: 100%;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .chart_box {
+            width: 50%;
+            display: inline-block;
+            overflow: hidden;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: top;
+
+            ul {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+
+                > li {
+                    margin: 0 auto;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 100%;
+
+                    > img {
+                        margin-bottom: 40px;
+                    }
+
+                    > ul {
+                        > li {
+                            display: inline;
+                            font-size: 13px;
+                            color: #777;
+                            position: relative;
+                            padding-left: 19px;
+                            margin-right: 10px;
+                            word-break: keep-all;
+                            line-height: 160%;
+
+                            &:nth-last-child(1) {
+                                margin-right: 0;
+                            }
+
+                            &:before {
+                                content: " ";
+                                position: absolute;
+                                left: 0;
+                                top: 1px;
+                                width: 13px;
+                                height: 13px;
+                            }
+
+                            &.green:before {
+                                background-color: #00997e;
+                            }
+
+                            &.orange:before {
+                                background-color: #d76919;
+                            }
+
+                            &.blue:before {
+                                background-color: #2490bd;
+                            }
+
+                            &.grey:before {
+                                background-color: #858585;
+                            }
+
+                            &.purple:before {
+                                background-color: #9479c7;
+                            }
+                        }
+                    }
+                }
+
+                > .title {
+                    font-size: 24px;
+                    color: #444;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .wd_50 {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .imgC {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-top: 60px;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .m {
+        display: none;
+    }
+
+    .eco {
+        padding: 115px 0 65px 0;
+
+        .h2 {
+            font-size: 36px;
+            color: #222;
+            margin-bottom: 40px;
+            text-align: left;
+            padding-top: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 35px;
+            text-align: left;
+            line-height: 26px;
+        }
+    }
+
+    .infra_eco {
+        background-color: #fcfcfc;
+        margin-top: 200px;
+        padding-bottom: 90px;
+
+        .imgC {
+            margin-bottom: 50px;
+        }
+
+        .top {
+            position: relative;
+            top: -200px;
+        }
+
+        .h3 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 50px;
+            line-height: 100%;
+            margin-top: -100px;
+        }
+    }
+
+    button {
+        display: inline-block;
+        width: 162px;
+        color: #444;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        border: 1px solid #666;
+        padding: 18px 0 16px 0;
+        margin: 0px 5px 5px 0;
+
+        &:hover {
+            color: #fff;
+            border: 1px solid #444;
+            background-color: #444;
+            transition: .2s ease-in-out;
+        }
+    }
+
+    ul {
+        &.sub {
+            padding-top: 44px;
+
+            p {
+                padding-bottom: 40px;
+            }
+
+            li {
+                float: left;
+                color: #666;
+                font-size: 16px;
+                letter-spacing: -0.5px;
+                line-height: 27px;
+                margin-bottom: 40px;
+
+                &:first-child {
+                    margin-right: 119px;
+                }
+            }
+
+            h3 {
+                padding: 60px 0 25px 0;
+                font-size: 28px;
+                color: #222;
+            }
+        }
+    }
+
+    .textbox {
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding: 25px 40px;
+        background: #f3f3f3;
+        font-size: 15px;
+        text-align: left;
+
+        span { 
+            &.first {
+                color: #222;
+    
+                &:after {
+                    content: "";
+                    color: #d9d9d9;
+                    padding: 0 30px 0 27px;
+                }
+
+            }
+        }
+    }
+}
+
+/* 장애인 IT육성, 교육 */
+.education_wrap {
+    .info_text {
+        max-width: 750px;
+        padding-top: 130px;
+    }
+
+    .news_wrap {
+        background: #fcfcfc;
+
+        .news {
+            padding: 120px 0 120px 0;
+
+            button {
+                display: inline-block;
+            }
+        }
+
+        h1 {
+            color: #222;
+            padding-bottom: 60px;
+        }
+    }
+
+    .btn_wrap {
+        &.board_view {
+            margin: 90px auto auto auto;
+
+            button {
+                &.white {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* IT 사회공헌 */
+.contribution_wrap {
+    .info_text {
+        max-width: 775px;
+        padding-top: 130px;
+    }
+
+    .news_wrap {
+        background: #fcfcfc;
+
+        h1 {
+            color: #222;
+            padding-bottom: 60px;
+        }
+
+        .news {
+            padding: 120px 0 100px 0;
+
+            .btn_wrap {
+                &.board_view {
+                    margin: 90px auto auto auto;
+
+                    button {
+                        &.white {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ========= MOBILE ========= */
+@media (max-width: 1320px) {
+
+    /* IT서비스 */
+    .service_wrap {
+        padding: 80px 5%;
+
+        .fl,
+        .fr {
+            float: none;
+            width: auto;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    /* IT솔루션 */
+    .solution_wrap {
+        margin-top: 10px;
+
+        .sec {
+            &:nth-child(2n-1) {
+                height: auto;
+                padding: 80px 0;
+                margin: 0;
+
+                p {
+                    &:last-child {
+                        padding: 0;
+                    }
+                }
+            }
+
+            &:nth-child(2n) {
+                h2 {
+                    font-size: 24px;
+                    padding: 82px 0 60px 0;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            padding: 60px 0 50px 0;
+        }
+
+        img {
+            display: block;
+            width: auto;
+            margin: auto;
+        }
+
+        .fl,
+        .fr {
+            float: none;
+            max-width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+
+        .pc {
+            display: none;
+        }
+
+        .m {
+            display: block;
+        }
+    }
+
+    /* 취약계층 고용 */
+    .employ_wrap {
+        .pc {
+            display: none;
+        }
+
+        .m {
+            display: block;
+        }
+
+        .chart_ui {
+            .chart_box {
+                display: block;
+                width: 100%;
+                margin-bottom: 90px;
+            }
+        }
+
+        .wd_50 {
+            display: block;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            width: auto;
+            margin: auto;
+        }
+
+        .textbox {
+            padding: 25px;
+
+            span {
+                &.first {
+                    &:after {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+
+        ul {
+            &.sub {
+                li {
+                    clear: both;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+    
+                    &:first-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .print {
+            max-width: 640px;
+            padding: 0 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        p {
+            &.txt1 {
+                padding: 0 20px;
+            }
+        }
+
+        .eco {
+            padding: 80px 20px 60px;
+
+            .h2 {
+                margin-top: 80px;
+            }
+        }
+
+        .infra_eco {
+            margin-top: 140px;
+
+            .h3 {
+                padding-top: 80px;
+            }
+        }
+    }
+
+}
+/* 1320 end */
+
+@media (max-width: 1024px) {
+
+    /* COMMON */
+    .br_1024 {
+        display: inline;
+    }
+
+    /* 취약계층 고용 */
+    .employ_wrap {
+        section {
+            padding: 0 20px;
+        }
+    }
+
+}
+/* 1024 end */
+
+@media (max-width: 640px) {
+
+    /* 개요 */
+    .info_text {
+        .title {
+            font-size: 24px;
+            padding: 65px 20px 35px;
+        }
+
+        .text {
+            padding: 45px 20px 60px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    /* IT 서비스 */
+    .service_wrap {
+        padding: 80px 5% 0 5%;
+
+        a {
+            width: 180px;
+            height: 50px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        br {
+            display: none;
+        }
+
+        h2 {
+            font-size: 22px;
+            padding: 50px 0 20px 0;
+        }
+
+        ul {
+            li {
+                font-size: 14px;
+                margin-bottom: 24px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    /* ICT 솔루션 */
+    .solution_wrap {
+        .inner {
+            padding: 0 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        br {
+            display: none;
+        }
+
+        h2 {
+            font-size: 22px;
+            padding: 50px 0 20px 0;
+        }
+
+        p {
+            font-size: 14px;
+            padding-bottom: 24px;
+            line-height: 22px;
+            text-align: left;
+        }
+    }
+
+    /* 취약계층 고용 */
+    .employ_wrap {
+        br {
+            &.m_n {
+                display: none;
+            }
+        }
+
+        .chart_warp {
+            padding: 50px 20px 10px;
+            margin-bottom: 60px;
+        }
+
+        .chart_ui {
+            .tex2 {
+                margin-bottom: 40px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            &.txt1 {
+                text-align: left;
+            }
+        }
+
+        .eco {
+            padding: 0 20px 10px;
+
+            .h2 {
+                font-size: 28px;
+            }
+        }
+
+        .infra_eco {
+            padding-bottom: 0px;
+            margin-top: 80px;
+        }
+
+        .sec {
+            &.infra_eco {
+                .inner {
+                    padding: 80px 20px 50px;
+                }
+            }
+        }
+    }
+
+    /* 장애인 IT육성교육, IT 사회공헌 */
+    .education_wrap {
+        .info_text {
+            img {
+                width: 100%;
+            }
+        }
+
+        .news_wrap {
+            .news {
+                padding: 65px 0 70px 0;
+            }
+        }
+
+        .h1_title {
+            font-size: 25px;
+            padding: 0;
+            margin-bottom: 0px;
+        }
+    }
+
+    .contribution_wrap {
+        .info_text {
+            img {
+                width: 100%;
+            }
+        }
+
+        br {
+            &.one {
+                display: none;
+            }
+        }
+
+        .news_wrap {
+            .news {
+                padding: 65px 0 70px 0;
+            }
+        }
+
+        .h1_title {
+            font-size: 25px;
+            padding: 0;
+            margin-bottom: 0px;
+        }
+    }
+
+    .btn_wrap {
+        &.board_view {
+            button {
+                &.white {
+                    display: block;
+                    background: #fff;
+                    color: #666;
+                    border: 1px solid #c9c9c9;
+                    margin: 0 auto 10px auto;
+                    text-align: center;
+
+                    &:hover {
+                        color: #fff;
+                        border: 1px solid #fff;
+                        background-color: #666;
+                        transition: .2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+}
+/* 640 end */

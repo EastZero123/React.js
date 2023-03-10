@@ -1,0 +1,150 @@
+@charset 'utf-8';
+
+// Mixin
+@mixin absolute($t: null, $l: null, $b: null, $r: null) {
+    position: absolute;
+    top: $t;
+    left: $l;
+    bottom: $b;
+    right: $r;
+}
+
+@mixin fixed($t: null, $l: null, $b: null, $r: null) {
+    position: fixed;
+    top: $t;
+    left: $l;
+    bottom: $b;
+    right: $r;
+}
+
+@mixin border($bp: null, $bw: 1px, $bt: solid, $bc: $c-line) {
+    @if $bp == all {
+        border: $bw $bt $bc;
+    }
+    @else {
+        border-#{$bp}: $bw $bt $bc;
+    }
+}
+
+@mixin radius($r: 5px) {
+    border-radius: $r;
+}
+
+@mixin flex($ai: center, $jc: center, $fw: nowrap, $fd: row){
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+}
+
+@mixin transform($transforms...) {
+    transform: $transforms;
+}
+
+@mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+@mixin scale($x: 1, $y: 1) {
+@include transform(scale($x, $y));
+} 
+
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+@mixin translateX($x) {
+    @include transform(translateX($x));
+}
+@mixin translateY($y) {
+    @include transform(translateY($y));
+}
+
+@mixin skew($x) {
+    @include transform(skew(#{$x}deg));
+} 
+
+@mixin transform-origin($origin) {
+    transform-origin: $origin;
+}
+
+@mixin transition($p: all, $t: 0.3s, $f: ease, $d: 0s){
+    transition: $p $t $f $d;
+}
+
+@mixin shadow($args...) {    
+    box-shadow: $args;
+}
+
+@mixin w-c {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+// animate
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+    @content;
+    }
+}
+
+@mixin ellipsis($line-cnt, $line-height) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line-cnt; 
+    -webkit-box-orient: vertical;
+    word-wrap: break-word; 
+    line-height: $line-height;
+    height: $line-height * $line-cnt; 
+}
+
+@mixin be_af {
+    content: ''; 
+    display: block;
+}
+
+%be_af {
+    @include be_af;
+}
+
+@for $i from 1 through 10 {
+	$base: 10;
+	$width: $base * $i;
+}
+
+@for $i from 1 through 10 {
+	$base: 10;
+	$width: $base * $i;
+	.w-#{$width} { 
+		width: calc(#{$width}% - 0px);
+	}
+}
+
+@function svg($svgName, $color: ffffff) {
+    $svgList: ( 
+        svg_zepeto: "%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11.001px' height='11.001px' viewBox='8 7.999 11.001 11.001' enable-background='new 8 7.999 11.001 11.001' xml:space='preserve'%3E%3Cpath fill='%23#{$color}' d='M18.839,10.719C18.942,10.484,19,10.226,19,9.953c0-1.079-0.906-1.954-2.027-1.954h-6.907 C8.946,8,8.038,8.874,8.038,9.955c0,1.08,0.907,1.954,2.028,1.954h2.164l-3.637,3.504c-0.507,0.489-0.688,1.171-0.545,1.799 C8.135,18.213,9.004,19,10.066,19h6.908c1.12,0,2.028-0.874,2.028-1.955c0-1.08-0.907-1.953-2.028-1.953H14.66l3.665-3.534 C18.577,11.315,18.748,11.025,18.839,10.719z'/%3E%3C/svg%3E%0A",
+        svg_blog: "%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='13px' viewBox='9 7 10 13' enable-background='new 9 7 10 13' xml:space='preserve'%3E%3Cpath fill='%23#{$color}' d='M17.862,12.335c-0.661-0.765-1.762-1.431-2.819-1.396c-1.241,0.042-2.289,0.271-3.08,0.947h-0.037V7H9v12.79 h2.923v-0.62h0.037C12.59,19.65,13.439,20,14.605,20c1.289,0,2.471-0.369,3.241-1.239C18.619,17.891,19,17.064,19,15.623 c0-1.326-0.481-2.524-1.141-3.288H17.862z M15.357,17.104c-0.402,0.403-0.884,0.604-1.45,0.604c-0.566,0-1.029-0.201-1.426-0.604 c-0.394-0.403-0.593-0.892-0.593-1.466c0-0.572,0.199-1.061,0.593-1.465c0.394-0.403,0.871-0.605,1.426-0.605 c0.556,0,1.046,0.202,1.45,0.605c0.402,0.404,0.604,0.893,0.604,1.465C15.961,16.213,15.76,16.701,15.357,17.104z'/%3E%3C/svg%3E%0A",
+        svg_youtube: "%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='8.125px' height='9.527px' viewBox='10.75 8.737 8.125 9.527' enable-background='new 10.75 8.737 8.125 9.527' xml:space='preserve'%3E%3Cpath fill='%23#{$color}' d='M19,13.5l-8.25,4.764V8.737L19,13.5z'/%3E%3C/svg%3E"
+    );
+    $svg: map-get($svgList, $svgName);
+    @return url("data:image/svg+xml;charset=utf8,#{$svg}");
+}
+
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 1024px;
+
+@mixin tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint-mobile}) {
+        @content;
+    }
+}

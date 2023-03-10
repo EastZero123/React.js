@@ -1,0 +1,48 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/* 나눔스퀘어 */
+@font-face {
+    font-family: 'nanum-square-b';
+    src: url('../font/nanumsquareb.eot');
+    src: url('../font/nanumsquareb.eot?#iefix') format('embedded-opentype'),
+         url('../font/nanumsquareb.woff') format('woff'),
+         url('../font/nanumsquareb.ttf') format('truetype'),
+         url('../font/nanumsquareb.svg#nanumsquarebregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nanum-square-r';
+    src: url('../font/nanumsquarer.eot');
+    src: url('../font/nanumsquarer.eot?#iefix') format('embedded-opentype'),
+         url('../font/nanumsquarer.woff') format('woff'),
+         url('../font/nanumsquarer.ttf') format('truetype'),
+         url('../font/nanumsquarer.svg#nanumsquarerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nanum-square-l';
+    src: url('../font/nanumsquarel.eot');
+    src: url('../font/nanumsquarel.eot?#iefix') format('embedded-opentype'),
+         url('../font/nanumsquarel.woff') format('woff'),
+         url('../font/nanumsquarel.ttf') format('truetype'),
+         url('../font/nanumsquarel.svg#nanumsquarerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nanum-square-eb';
+    src: url('../font/nanumsquareeb.eot');
+    src: url('../font/nanumsquareeb.eot?#iefix') format('embedded-opentype'),
+         url('../font/nanumsquareeb.woff') format('woff'),
+         url('../font/nanumsquareeb.ttf') format('truetype'),
+         url('../font/nanumsquareeb.svg#nanumsquarerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

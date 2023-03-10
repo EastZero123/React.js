@@ -1,0 +1,109 @@
+@charset 'utf-8';
+
+* {
+    box-sizing: border-box;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+}
+fieldset,
+img {
+    border: 0 none;
+}
+dl,
+ul,
+ol,
+menu,
+li {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: " ";
+    content: none;
+}
+input,
+select,
+textarea,
+button {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+}
+body {
+    background: #fff;
+}
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-family: 'nanum-square-r', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+pre {
+    white-space: pre-wrap;
+}

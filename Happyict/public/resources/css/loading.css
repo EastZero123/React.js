@@ -1,0 +1,15 @@
+@charset "utf-8";
+.wrap-loading { 
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100000;
+	background: rgba(0, 0, 0, 0.2); /*not in ie */
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#20000000',
+		endColorstr='#20000000'); /* ie */
+}
+.wrap-loading div{position:fixed;left:20%;}
+.wrap-loading img{position:fixed;left:50%;top:50%;margin-left: -30px;margin-top: -50px;}
+.display-none{display:none;}

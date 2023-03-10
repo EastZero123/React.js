@@ -1,0 +1,22 @@
+/* svg */
+*[class*="svg_"] {
+    display: inline-block;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include transition();
+}
+
+.svg {
+    $root: &;
+
+    &_zepeto {
+        background-image: svg(zepeto);
+    }
+    &_blog {
+        background-image: svg(blog);
+    }
+    &_youtube {
+        background-image: svg(youtube);
+    }
+}
